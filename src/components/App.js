@@ -2,10 +2,14 @@ import React from 'react';
 import '../style.css';
 import SearchBar from '../containers/SearchBar';
 
-export default function App() {
-  return (
-    <div>
-      <SearchBar />
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <SearchBar />
+      </div>
+    );
+  }
 }
+
+export default App;
