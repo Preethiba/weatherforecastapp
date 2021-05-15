@@ -13,13 +13,13 @@ export default class SearchBar extends React.Component {
     this.setState({ term: event.target.value });
   }
 
-  onSubmitChange(event) {
+  onFormSubmit(event) {
     event.preventDefault();
   }
 
   render() {
     return (
-      <form className="input-group" onSubmit={this.onSubmitChange}>
+      <form className="input-group" onSubmit={this.onFormSubmit}>
         <input
           placeholder="Get a 5-day forecast in your favorite cities"
           className="form-control"
