@@ -6,7 +6,7 @@ export default class SearchBar extends React.Component {
 
     this.state = { term: '' };
 
-    this.onInputChange = this.onInputChange.bind(this);
+    this.onInputChange = this.onInputChange.bind(this); // to preserve this context
   }
 
   onInputChange(event) {
