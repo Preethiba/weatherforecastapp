@@ -9,10 +9,8 @@ export function fetchWeather(city) {
   const URL = `${ROOT_URL}&q=${city},in`;
   const response = axios.get(URL);
 
-  console.log('response:' + response);
-
   return {
     type: FETCH_WEATHER,
-    payload: response
+    payload: response.data
   };
 }
