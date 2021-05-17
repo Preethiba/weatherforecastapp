@@ -18,6 +18,10 @@ class SearchBar extends React.Component {
 
   onFormSubmit(event) {
     event.preventDefault();
+    //fetch Weather Data
+    this.props.fetchWeather(this.state.term);
+    //clear the input
+    this.setState({ term: '' });
   }
 
   render() {
@@ -39,10 +43,12 @@ class SearchBar extends React.Component {
   }
 }
 
-function mapDispatchToProps(dispatch){
+function mapDispatchToProps(dispatch) {
   //makes sure that the action is passed to reducers
-  return bindActionCreators({ fetchWeather },dispatch);
+  return bindActionCreators({ fetchWeather }, dispatch);
 }
 
-export default connect(null,mapDispatchToProps)(SearchBar);
-
+export default connect(
+  null,
+  mapDispatchToProps
+)(SearchBar);
