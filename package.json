@@ -6,6 +6,7 @@
     "react": "17.0.0",
     "react-dom": "17.0.0",
     "react-redux": "^7.2.4",
+    "react-sparkline": "^2.0.0",
     "redux": "^4.1.0",
     "redux-promise": "^0.6.0"
   },
