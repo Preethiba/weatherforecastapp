@@ -12,7 +12,7 @@ class GoogleMap extends React.Component {
   }
 
   render() {
-    return <div ref="map" />;
+    return <div ref="map" style={{ height: '200px', width: '250px' }} />;
   }
 }
 
